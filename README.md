@@ -8,7 +8,7 @@ Project as part of the Cloud computing and Big Data course - NYU Spring'21
 
 - [Amazon SageMaker](https://aws.amazon.com/sagemaker)
 - [Machine Learning model using Amazon SageMaker](https://aws.amazon.com/getting-started/hands-on/build-train-deploy-machine-learning-model-sagemaker/)
-- [Build and Train a spam filter Machine Learning Model](https://github.com/aws-samples/reinvent2018-srv404-lambda-sagemaker/ blob/master/training/README.md)
+- [Build and Train a spam filter Machine Learning Model](https://github.com/aws-samples/reinvent2018-srv404-lambda-sagemaker/blob/master/training/README.md)
 
 
 
