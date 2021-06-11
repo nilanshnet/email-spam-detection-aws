@@ -4,7 +4,7 @@ A system that upon receipt of an email message, automatically flags it as spam o
 Project as part of the Cloud computing and Big Data course - NYU Spring'21 
 
 
-###### References
+#### References
 
 - [Amazon SageMaker](https://aws.amazon.com/sagemaker)
 - [Machine Learning model using Amazon SageMaker](https://aws.amazon.com/getting-started/hands-on/build-train-deploy-machine-learning-model-sagemaker/)
