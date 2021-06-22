@@ -44,7 +44,7 @@ A spam detection system built on AWS cloud, that upon receipt of an email messag
 ### Setting up Lambda function:
 We need to setup a Lambda function that gets triggered whenever an email is received on the custom email address.
 1. Navigate to the lambda function created as part of the cloud formation template. From there, set up the trigger for the Lambda as your S3 bucket. *Make sure that S3 has required IAM permissions for the Lambda function resource.*
-2. For the code part of the Lambda function, use the [Python code](./spam-classify.py). If necessary, add layers in the lambda function for numpy and other libraries. *Make sure that Lambda has required IAM permissions for the S3 resource, SES and CloudWatch.*   
+2. For the code part of the Lambda function, use the [Python code](./spam_classify.py). If necessary, add layers in the lambda function for numpy and other libraries. *Make sure that Lambda has required IAM permissions for the S3 resource, SES and CloudWatch.*   
 The lambda function is ready to send the email as shown in the ***working section***, back to the sender using the custom email address linked with Amzon Simple Email Service.
 
 
