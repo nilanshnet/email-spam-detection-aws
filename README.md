@@ -32,7 +32,7 @@ A spam detection system built on AWS cloud, that upon receipt of an email messag
 - An email address for that domain (user1@example.com). This will require adding up *MX and TXT records* on the domain provider site to receive an email. Refer the documentation of domain provider to add the records.
 
 ### Standing up the AWS resources and Machine Learning spam classifier model using AWS Sagemaker: 
-1.  Use the [Cloud Formation template](email-spam-detection-aws/CloudFormationStack.json) to create the S3 buckets (for storing emails), AWS sagemaker endpoint, notebook instance, Lambda funtion and appropriate roles. 
+1.  Use the [Cloud Formation template](./CloudFormationStack.json) to create the S3 buckets (for storing emails), AWS sagemaker endpoint, notebook instance, Lambda funtion and appropriate roles. 
 2.  Follow the reference link ***Build and train a spam filter machine learning model*** to create, train and deploy the spam classifier model. AWS sagemaker uses [XGBoost ML algorithm](https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost.html) and the [Bank marketing data set](https://archive.ics.uci.edu/ml/datasets/bank+marketing) to build and train the model. You can use your own custom made machine learning model and data set for this purpose. 
 
 ### Setting up Simple Email Service (SES) on AWS:
@@ -44,7 +44,7 @@ A spam detection system built on AWS cloud, that upon receipt of an email messag
 ### Setting up Lambda function:
 We need to setup a Lambda function that gets triggered whenever an email is received on the custom email address.
 1. Navigate to the lambda function created as part of the cloud formation template. From there, set up the trigger for the Lambda as your S3 bucket. *Make sure that S3 has required IAM permissions for the Lambda function resource.*
-2. For the code part of the Lambda function, use the [Python code](/spam-classify.py). If necessary, add layers in the lambda function for numpy and other libraries. *Make sure that Lambda has required IAM permissions for the S3 resource, SES and CloudWatch.*   
+2. For the code part of the Lambda function, use the [Python code](./spam-classify.py). If necessary, add layers in the lambda function for numpy and other libraries. *Make sure that Lambda has required IAM permissions for the S3 resource, SES and CloudWatch.*   
 The lambda function is ready to send the email as shown in the ***working section***, back to the sender using the custom email address linked with Amzon Simple Email Service.
 
 
