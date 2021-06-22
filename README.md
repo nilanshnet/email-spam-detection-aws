@@ -4,7 +4,7 @@
 A spam detection system built on AWS cloud, that upon receipt of an email message, automatically flags it as spam or not. This is based on the prediction obtained from the machine learning model created using Amazon SageMaker. The definition and provision of the resources on AWS cloud is done through the AWS Cloudformation template. This template can also be used with AWS code pipeline to automate the resource stack formation.
 
 
-## Architecture Design
+## Design
 
 ![Screenshot 2021-06-10 at 9 25 05 PM](https://user-images.githubusercontent.com/26367904/122851048-f278f580-d32b-11eb-99e5-fd9a6f009ee0.png)
 
