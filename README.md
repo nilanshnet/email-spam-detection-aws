@@ -6,7 +6,7 @@ A spam detection system built on AWS cloud, that upon receipt of an email messag
 
 ## Design
 
-![Screenshot 2021-06-10 at 9 25 05 PM](https://user-images.githubusercontent.com/26367904/122851048-f278f580-d32b-11eb-99e5-fd9a6f009ee0.png)
+![Screenshot 2021-06-22 at 12 44 40 AM](https://user-images.githubusercontent.com/26367904/122864709-bf8e2c00-d342-11eb-814e-5bfa7e1b5dd1.png)
 
 
 ## Working 
@@ -33,7 +33,7 @@ A spam detection system built on AWS cloud, that upon receipt of an email messag
 
 ### Standing up the AWS resources and Machine Learning spam classifier model using AWS Sagemaker: 
 1.  Use the [Cloud Formation template](email-spam-detection-aws/CloudFormationStack.json) to create the S3 buckets (for storing emails), AWS sagemaker endpoint, notebook instance, Lambda funtion and appropriate roles. 
-2.  Follow the reference link ***Build and train a spam filter machine learning model*** to create, train and deploy the spam classifier model. It uses [XGBoost ML algorithm](https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost.html) and AWS sagemaker to deploy the model. You can use your own custom made meachine learning model and data set for this purpose. 
+2.  Follow the reference link ***Build and train a spam filter machine learning model*** to create, train and deploy the spam classifier model. AWS sagemaker uses [XGBoost ML algorithm](https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost.html) and the [Bank marketing data set](https://archive.ics.uci.edu/ml/datasets/bank+marketing) to build and train the model. You can use your own custom made meachine learning model and data set for this purpose. 
 
 ### Setting up Simple Email Service (SES) on AWS:
 1.  Open SES home on AWS console and navigate to *Domains*. Verify a new domain (prerequisites) that you already own. Copy the 'TXT record' provided on console and add it in your Domain provider's site. 
